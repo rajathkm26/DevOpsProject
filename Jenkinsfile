@@ -15,7 +15,7 @@ pipeline {
       agent any
       steps {
 	sh 'git clone https://github.com/rajathkm26/DevOpsProject.git'
-        sh 'docker build -t jenkins-docker:1.0 ./DevOpsProject'
+        sh 'docker build -t jenkins-docker:1.0 .'
       }
     }
     stage('Deploy Image') {
